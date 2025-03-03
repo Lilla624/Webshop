@@ -1,0 +1,108 @@
+<div class="registration-container">
+    <h2>Regisztráció</h2>
+    <form (ngSubmit)="onSubmit()" #registrationForm="ngForm">
+      
+      <!-- Keresztnév és Vezetéknév -->
+      <div class="form-group name-group">
+        <div class="name-field">
+          <label for="firstName">Keresztnév</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            [(ngModel)]="model.firstName"
+            #firstName="ngModel"
+            required
+          />
+          <div *ngIf="firstName.invalid && firstName.touched" class="error-message">
+            A keresztnevet meg kell adni!
+          </div>
+        </div>
+        <div class="name-field">
+          <label for="lastName">Vezetéknév</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            [(ngModel)]="model.lastName"
+            #lastName="ngModel"
+            required
+          />
+          <div *ngIf="lastName.invalid && lastName.touched" class="error-message">
+            A vezetéknevet meg kell adni!
+          </div>
+        </div>
+      </div>
+  
+      <!-- Szállítási cím -->
+      <div class="form-group">
+        <label for="address">Szállítási cím</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          [(ngModel)]="model.address"
+          #address="ngModel"
+          required
+        />
+        <div *ngIf="address.invalid && address.touched" class="error-message">
+          A címet meg kell adni!
+        </div>
+      </div>
+  
+      <!-- Telefonszám -->
+      <div class="form-group">
+        <label for="phone">Telefonszám</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          [(ngModel)]="model.phone"
+          #phone="ngModel"
+          required
+          pattern="^\+?[0-9]{10,15}$"
+        />
+        <div *ngIf="phone.invalid && phone.touched" class="error-message">
+          Érvényes telefonszámot adjon meg!
+        </div>
+      </div>
+  
+      <!-- Jelszó -->
+      <div class="form-group">
+        <label for="password">Jelszó</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="model.password"
+          #password="ngModel"
+          required
+          minlength="6"
+        />
+        <div *ngIf="password.invalid && password.touched" class="error-message">
+          A jelszónak legalább 6 karakternek kell lennie!
+        </div>
+      </div>
+  
+      <!-- Jelszó megerősítése -->
+      <div class="form-group">
+        <label for="confirmPassword">Jelszó megerősítése</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          [(ngModel)]="model.confirmPassword"
+          #confirmPassword="ngModel"
+          required
+          [pattern]="model.password"
+        />
+        <div *ngIf="confirmPassword.invalid && confirmPassword.touched" class="error-message">
+          A két jelszónak egyeznie kell!
+        </div>
+      </div>
+  
+      <!-- Submit gomb -->
+      <button type="submit" [disabled]="registrationForm.invalid">Regisztrálás</button>
+    </form>
+  </div>
+  

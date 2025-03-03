@@ -1,0 +1,144 @@
+/* Alap beállítások */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .registration-container {
+    margin: auto;
+}
+
+
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* A regisztrációs forma */
+  .registration-container {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* H2 cím stílus */
+  h2 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Form elem stílusok */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .name-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .name-field {
+    flex: 1; /* Az input mezők egyenlő szélességet kapnak */
+  }
+  
+  label {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+    outline: none;
+  }
+  
+  /* Gomb stílusok */
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+  }
+  
+  /* Form hibák kezelése */
+  .error-message {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  /* Mobilbarát beállítások */
+  @media (max-width: 480px) {
+    .registration-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 1.6em;
+    }
+  
+    input, button {
+      font-size: 1em;
+    }
+  
+    .name-group {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .name-field {
+      margin-bottom: 10px;
+    }
+  }
+  
