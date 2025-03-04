@@ -18,91 +18,91 @@ interface Chips {
 export class ChipsekComponent {
   chipsek: Chips[] = [
     {
-      id: 'cheetos_steak',
+      id: 'cheetos',
       nev: 'Cheetos Japan Steak Flavor Chips 90g',
       image: './assets/chipsImg/Cheetos Japan Steak Flavor Chips 90g.jpg',
       ar: 1690,
       darab: 1
     },
     {
-      id: 'pringles_bbq',
+      id: 'pringles',
       nev: 'Pringles Texas BBQ Sauce 165g',
       image: './assets/chipsImg/Pringles Texas BBQ Sauce 165g.jpg',
       ar: 1049,
       darab: 1
     },
     {
-      id: 'pringles_paprika',
+      id: 'pringles',
       nev: 'Pringles Paprika 130g',
       image: './assets/chipsImg/Pringles Paprika 130g.jpg',
       ar: 1049,
       darab: 1
     },
     {
-      id: 'pringles_original',
+      id: 'pringles',
       nev: 'Pringles Original 165g',
       image: './assets/chipsImg/Pringles Original 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_onion',
+      id: 'pringles',
       nev: 'Pringles Sour Cream & Onion 165g',
       image: './assets/chipsImg/Pringles Sour Cream & Onion 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_hot',
+      id: 'pringles',
       nev: 'Pringles Hot & Spicy 165g',
       image: './assets/chipsImg/Pringles Hot & Spicy 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_ranch',
+      id: 'pringles',
       nev: 'Pringles Ranch 165g',
       image: './assets/chipsImg/Pringles Ranch 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_jalapeno',
+      id: 'pringles',
       nev: 'Pringles Jalapeño 165g',
       image: './assets/chipsImg/Pringles Jalapeño 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_pizza',
+      id: 'pringles',
       nev: 'Pringles Pizza 165g',
       image: './assets/chipsImg/Pringles Pizza 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_cheddar',
+      id: 'pringles',
       nev: 'Fűszeres Pringles Cheddar Cheese 165g',
       image: './assets/chipsImg/Pringles Cheddar Cheese 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_cream',
+      id: 'pringles',
       nev: 'Pringles Scorchin Sour Cream & Onion 165g',
       image: './assets/chipsImg/Pringles Scorchin Sour Cream & Onion 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'pringles_potato',
+      id: 'pringles',
       nev: 'Pringles Loaded Potato Skins 165g',
       image: './assets/chipsImg/Pringles Loaded Potato Skins 165g.jpg',
       ar: 1699,
       darab: 1
     },
     {
-      id: 'chazz_potato',
+      id: 'chazz',
       nev: 'Chazz Flaming Ghost Potato Chips 50g',
       image: './assets/chipsImg/Chazz Flaming Ghost Potato Chips 50g.jpg',
       ar: 990,
@@ -115,20 +115,20 @@ export class ChipsekComponent {
       ar: 3690,
       darab: 1
     },
-    { id: 'takis_blue',
+    { id: 'takis',
       nev: 'Takis Blue Heat Spicy Mexican Chips 92g',
       image: './assets/chipsImg/Takis Blue Heat Spicy Mexican Chips 92g.jpg',
       ar: 1990,
       darab: 1
     },
     {
-      id: 'takis_guac',
+      id: 'takis',
       nev: 'Takis Guacamole Mexico 70g',
       image: './assets/chipsImg/Takis Guacamole Mexico 70g.jpg',
       ar: 1390,
       darab: 1
     },
-    { id: 'takis_volcano',
+    { id: 'takis',
       nev: 'Takis Queso Volcano Chips 90g',
       image: './assets/chipsImg/Takis Queso Volcano Chips 90g.jpg',
       ar: 1690,
